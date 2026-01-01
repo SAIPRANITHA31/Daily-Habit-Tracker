@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Habit Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="hero">
+    <h1>Daily Habit Tracker</h1>
+    <p>Track habits. Beat the clock.</p>
+</header>
+
+<main class="container">
+
+    <nav class="nav">
+        <a href="index.html" class="active">Today</a>
+        <a href="weekly.html">Weekly Summary</a>
+    </nav>
+
+    <!-- Progress -->
+    <section class="progress-section">
+        <div class="progress-text">
+            <span>On-Time Completion</span>
+            <span id="progressPercent">0%</span>
+        </div>
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+    </section>
+
+    <!-- Input -->
+    <div class="input-section time-input">
+        <input type="text" id="habitInput" placeholder="Habit name" />
+        <input type="time" id="targetTime" />
+        <button onclick="addHabit()">Add</button>
+    </div>
+
+    <ul id="habitList"></ul>
+
+    <button class="reset-btn" onclick="resetHabits()">Reset for New Day</button>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

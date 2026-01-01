@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #f6f7f6;
+    color: #111;
+}
+
+/* Hero */
+.hero {
+    background: #b7e4c7;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1rem;
+    color: #1b4332;
+}
+
+/* Container */
+.container {
+    max-width: 520px;
+    margin: 30px auto;
+    padding: 0 16px;
+}
+
+/* Progress */
+.progress-section {
+    margin-bottom: 25px;
+}
+
+.progress-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #d8f3dc;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    width: 0%;
+    background: #40916c;
+    transition: width 0.3s ease;
+}
+
+/* Input */
+.input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-section input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+}
+
+.input-section button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    background: #40916c;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.input-section button:hover {
+    background: #2d6a4f;
+}
+
+/* Habits */
+#habitList {
+    list-style: none;
+}
+
+.habit-item {
+    background: #fff;
+    padding: 14px 16px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.habit-item.completed span {
+    text-decoration: line-through;
+    color: #777;
+}
+
+/* Reset */
+.reset-btn {
+    margin-top: 25px;
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    background: #1b4332;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    background: #081c15;
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .input-section {
+        flex-direction: column;
+    }
+}
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #1b4332;
+    padding-bottom: 4px;
+}
+
+.nav a.active {
+    border-bottom: 2px solid #40916c;
+}
+
+/* Weekly Summary */
+.weekly-list {
+    list-style: none;
+}
+
+.weekly-item {
+    background: #fff;
+    padding: 14px;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.weekly-item span {
+    font-weight: 500;
+}
+.time-input {
+    flex-wrap: wrap;
+}
+
+.habit-time {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.status {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.on-time {
+    color: #2d6a4f;
+}
+
+.late {
+    color: #b02a37;
+}
+.delete-btn {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.delete-btn:hover {
+    color: #b02a37;
+}
